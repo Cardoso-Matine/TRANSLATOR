@@ -5,6 +5,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const sourceText = document.getElementById('source-text');
     const translatedText = document.getElementById('translated-text');
     const translateButton = document.getElementById('translate-btn');
+
+    
+ const themeToggle = document.getElementById('themeToggle');
+ themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    
+    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+ });
+
+
+ if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark-mode');
+ }
     
     async function translate() {
         const text = sourceText.value.trim();
