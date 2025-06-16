@@ -118,3 +118,18 @@ body.dark-mode .translate-btn {
 body.dark-mode .theme-toggle {
     color: #fff;
 }
+
+/* Footer Styles */
+footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #eee;
+}
+
+body.dark-mode footer {
+    color: #aaa;
+    border-top: 1px solid #444;
+}
