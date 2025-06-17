@@ -7,7 +7,7 @@
 
     <div class="language-selectors">
         <div class="language-selector">
-            <label for="source-lang">De:</label>
+            <label for="source-lang">From:</label>
             <select id="source-lang">
                 {% for code, name in languages.items %}
                 <option value="{{ code }}" {% if code == 'en' %}selected{% endif %}>{{ name }}</option>
@@ -18,7 +18,7 @@
         <button id="swap-langs" class="swap-btn">⇄</button>
         
         <div class="language-selector">
-            <label for="target-lang">Para:</label>
+            <label for="target-lang">To:</label>
             <select id="target-lang">
                 {% for code, name in languages.items %}
                 <option value="{{ code }}" {% if code == 'pt' %}selected{% endif %}>{{ name }}</option>
@@ -28,10 +28,10 @@
     </div>
     
     <div class="text-areas">
-        <textarea id="source-text" placeholder="Digite o texto aqui..."></textarea>
-        <textarea id="translated-text" placeholder="Tradução aparecerá aqui..." readonly></textarea>
+        <textarea id="source-text" placeholder="Type to translate"></textarea>
+        <textarea id="translated-text" placeholder="" readonly></textarea>
     </div>
     
-    <button id="translate-btn" class="translate-btn">Traduzir</button>
+    <button id="translate-btn" class="translate-btn">Translate</button>
 </div>
 {% endblock %}
