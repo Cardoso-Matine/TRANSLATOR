@@ -1,4 +1,4 @@
-# TRANSLATOR 🌍↔️🌎
+## TRANSLATOR 🌍↔️🌎
 👉 Live Demo: https://seuusuario.pythonanywhere.com
 
 # 🔧 Tecnologias Utilizadas
