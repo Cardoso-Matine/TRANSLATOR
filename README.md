@@ -1,5 +1,7 @@
 # TRANSLATOR 🌍↔️🌎
-👉 Live Demo: https://seuusuario.pythonanywhere.com
+A web translator developed in Django that uses the MyMemory API for translations in 10 languages.
+
+👉 Live Demo: https://translator.pythonanywhere.com
 
 ## Technologies used
 - Backend: Python + Django
