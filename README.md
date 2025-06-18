@@ -6,8 +6,8 @@
 - Frontend: HTML, CSS, JavaScript
 - API: MyMemory Translation API
 - Deploy: PythonAnywhere
-- Dependências:
-- requests (consumo da API)
-- whitenoise (servir arquivos estáticos)
-- gunicorn (servidor WSGI para produção)
+- Dependencies:
+ - requests (API consumption)
+ - whitenoise (serving static files)
+ - gunicorn (WSGI server for production)
 
