@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     async function translate() {
         const text = sourceText.value.trim();
         if (!text) {
-            alert('Por favor, digite algum texto para traduzir.');
+            alert('Please type some text to translate.');
             return;
         }
         
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         try {
             translateButton.disabled = true;
-            translateButton.textContent = 'Traduzindo...';
+            translateButton.textContent = 'Translating...';
             
             const response = await fetch('/translate/', {
                 method: 'POST',
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Erro: ' + error.message);
         } finally {
             translateButton.disabled = false;
-            translateButton.textContent = 'Traduzir';
+            translateButton.textContent = 'Translate';
         }
     }
     
